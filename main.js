@@ -13,6 +13,7 @@ let count = 0;
 createContact();
 btnCheck.addEventListener("click", (e) => {
     e.preventDefault();
+
     count++;
     if (count % 2 == 0) {
         container.style.display = "none";
@@ -21,12 +22,6 @@ btnCheck.addEventListener("click", (e) => {
     }
 });
 btnCreate.addEventListener("click", (e) => {
-    // for (x of inputs) {
-    //     if (!x.value.trim()) {
-    //         alert("Заполните все поля!");
-    //         return;
-    //     }
-    // }
     e.preventDefault();
     let contacts = {
         name: name.value,
@@ -35,6 +30,9 @@ btnCreate.addEventListener("click", (e) => {
     };
     setContactToStorage(contacts);
     createContact();
+    for (x of inputs) {
+        x.value = "";
+    }
 });
 
 function createContact() {

@@ -103,8 +103,8 @@ img {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #eee;
-    background-color: #b2b2b2;
-    border: 0;
+    background-color: #999898;
+    border: 2px solid rgb(158, 158, 158);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     color: white;
 }
@@ -159,4 +159,9 @@ img {
 .inner-modal {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
+}
+
+h2 {
+    margin-left: 20px;
+    color: #7e7e7e;
 }
