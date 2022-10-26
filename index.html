@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <form action="">
+            <div class="inputs">
+                <input type="text" id="name" placeholder="name" />
+                <input type="text" id="email" placeholder="@mail" />
+                <input type="text" id="img" placeholder="imgURL" />
+            </div>
+            <div class="buttons">
+                <button id="btnCreate">Create Contact</button>
+                <button id="btnCheck">Check Contact List</button>
+            </div>
+        </form>
+        <div class="main-modal">
+            <div class="inner-modal">
+                <p>Edit Contact</p>
+                <input type="text" class="inpEditName" placeholder="new name"/>
+                <input type="text" class="inpEditMail"  placeholder="new @mail"/>
+                <input type="text" class="inpEditImg" placeholder="new imgURL"/>
+                <button class="btnSave">Save</button>
+                <div class="close">
+                    <button class="btnCloser">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Contacts</h2>
+            <div class="ul contactList">
+                <div class="contact">
+                    <div class="img"></div>
+                    <div class="form"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="main-modal">
+            <div class="inner-modal">
+                <input type="text" class="inpEditName" />
+                <input type="text" class="inpEditMail" />
+                <input type="text" class="inpEditImg" />
+                <button class="btnSave">Save</button>
+                <div class="close">
+                    <button class="btnCloser">Close</button>
+                </div>
+            </div> -->
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>

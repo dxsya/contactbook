@@ -1,0 +1,162 @@
+form {
+    margin: 10px;
+    padding: 15px;
+    /* background-color: rgb(251, 141, 141); */
+}
+* {
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.inner-modal {
+    border: 2px solid rgb(158, 158, 158);
+}
+
+.inputs input,
+.main-modal input {
+    display: block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.inner-modal {
+    background-color: #fafafa;
+}
+
+.inputs input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    border: 3px solid #bdbdbd;
+    width: 500px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.contact:hover {
+    background-color: #f2f2f2;
+}
+
+.infoDiv {
+    border-left: 3px solid #bdbdbd;
+    padding-left: 10px;
+    width: 300px;
+}
+
+.container {
+    width: 900px;
+    display: none;
+    margin-left: 25px;
+    z-index: 1;
+}
+
+.imgDiv {
+    width: 80px;
+}
+
+.btnDiv button {
+    width: 80px;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #b2b2b2;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+#btnCreate,
+#btnCheck,
+.inner-modal button {
+    display: block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #b2b2b2;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#btnCreate:hover,
+#btnCheck:hover,
+.btnDiv button:hover,
+.inner-modal button:hover {
+    background-color: #7e7e7e;
+    cursor: pointer;
+}
+
+.inputs input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.main-modal {
+    /* position: absolute; */
+    /* background-color: rgb(184, 184, 184); */
+    display: none;
+    z-index: 2;
+    border: 2px, solid rgb(119, 119, 119);
+}
+
+.inner-modal {
+    position: absolute;
+    padding: 20px;
+    left: 37%;
+    top: 25%;
+    /* width: 350px;
+    height: 250px; */
+    margin: auto;
+    background-color: rgb(187, 187, 187);
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px, solid rgb(119, 119, 119);
+    -webkit-box-shadow: 14px 14px 29px 5px rgba(34, 60, 80, 0.13);
+    -moz-box-shadow: 14px 14px 29px 5px rgba(34, 60, 80, 0.13);
+    box-shadow: 14px 14px 29px 5px rgba(34, 60, 80, 0.13);
+}
+
+.inner-modal button,
+.inner-modal input {
+    margin: 10px auto;
+}
+
+.close {
+    text-align: end;
+}
+
+.inner-modal {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
