@@ -108,8 +108,8 @@ let btnCloser = document.querySelector(".btnCloser");
 
 function EditContact(index) {
     document.body.style.backgroundColor = "rgb(224, 224, 224)";
-    form.style.display = "none";
-    container.style.display = "none";
+    // form.style.display = "none";
+    // container.style.display = "none";
     mainModal.style.display = "block";
     let contact = JSON.parse(localStorage.getItem("contacts"));
     inpEditName.setAttribute("id", index);
@@ -129,6 +129,8 @@ btnSave.addEventListener("click", () => {
     container.style.display = "block";
     let contacts = JSON.parse(localStorage.getItem("contacts"));
     let nameId = inpEditName.id;
+    let mailId = inpEditMail.id;
+    let imgId = inpEditImg.id;
     if (
         !inpEditImg.value.trim() ||
         !inpEditMail.value.trim() ||
@@ -145,6 +147,8 @@ btnSave.addEventListener("click", () => {
     };
 
     contacts.splice(nameId, 1, upContact);
+    contacts.splice(mailId, 1, upContact);
+    contacts.splice(imgId, 1, upContact);
     localStorage.setItem("contacts", JSON.stringify(contacts));
     mainModal.style.display = "none";
     createContact();
