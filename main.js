@@ -13,7 +13,6 @@ let count = 0;
 createContact();
 btnCheck.addEventListener("click", (e) => {
     e.preventDefault();
-
     count++;
     if (count % 2 == 0) {
         container.style.display = "none";
@@ -128,6 +127,7 @@ btnSave.addEventListener("click", () => {
     form.style.display = "block";
     container.style.display = "block";
     let contacts = JSON.parse(localStorage.getItem("contacts"));
+    console.log(contacts);
     let nameId = inpEditName.id;
     let mailId = inpEditMail.id;
     let imgId = inpEditImg.id;
@@ -145,7 +145,6 @@ btnSave.addEventListener("click", () => {
         email: inpEditMail.value,
         img: inpEditImg.value,
     };
-
     contacts.splice(nameId, 1, upContact);
     contacts.splice(mailId, 1, upContact);
     contacts.splice(imgId, 1, upContact);
